@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="generator" content="Slide Show (S9); see slideshow.rubyforge.org">
+<meta name="author" content="<%= @headers['author']%>">
+
+<title><%= @headers['title'] %></title>
+
+<!-- Don't alter this, CSSS needs it to work -->
+<link href="slideshow.css" rel="stylesheet" />
+
+<!-- Theme-specific styles go here (themes can be reused in multiple talks) -->
+<link href="theme.css" rel="stylesheet" />
+
+<!-- Talk-specific styles go here -->
+<!-- GB: changed fixed name (talk.css) to variable -->
+<link href="<%= "#{@name}.css" %>" rel="stylesheet" />
+	
+</head>
+<body data-duration="45">
+
+<header id="intro" class="slide">
+	<h1><%= @headers['title'] %></h1>
+	<p class="attribution">By <%= @headers['author']%></p>
+</header>
+
+	<section class="slide" id="navigation">
+		<h2>Navigation</h2>
+		<p>Only through keyboard for now :(</p>
+		<ul>
+			<li>→ or ↓ to advance to the next slide or incrementally displayed item</li>
+			<li>← or ↑ to go to the previous slide or incrementally displayed item</li>
+			<li>Ctrl* + → or Ctrl* + ↓ to jump to the next slide</li>
+			<li>Ctrl* + ← or Ctrl* + ↑ to jump to the previous slide</li>
+			<li>Home to go to the first slide, End to go to the last</li>
+			<li>Ctrl* + G to jump to an arbitrary slide (by slide number or identifier)</li>
+		</ul>
+		<p>* Ctrl or Shift actually. Only Shift works in Opera.</p>
+	</section>
+
+	<section class="slide" id="navigation2">
+		<h2>Navigation Cont.</h2>
+		
+		<p>Thumbnail view</p>
+		<ul>
+		  <li>Press Ctrl+H (or Shift+H if you're in Opera) now.</li>
+		  <li>Press Ctrl+Shift+H to see all slides (warning: can be slow!)</li>
+		</ul>
+		
+		<p>Presenter view</p>
+		<ul>
+		  <li>This slide has presenter notes. They are only visible in presenter view (Ctrl+P or Shift+P).</li>
+		</ul>
+		<p class="presenter-notes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+		
+	</section>
+
+<!-- note: assumes no header (breaking slides w/ SLIDE directive) -->
+<% @slides.each do |slide| %>
+  <section class="slide">
+    <%= slide.content %>
+  </section>
+<% end %>
+
+
+<!--
+<footer class="slide">
+	<h2>Thank you!</h2>
+	<p>Closing remarks</p>
+</footer>
+-->
+
+<script src="slideshow.js"></script>
+
+<!-- Make sure the reference to -prefix-free works -->
+<script src="prefixfree.min.js"></script>
+
+<!-- Uncomment the plugins you need
+<script src="plugins/css-edit.js"></script>
+<script src="plugins/css-snippets.js"></script>
+<script src="plugins/css-controls.js"></script>
+-->
+<script>var slideshow = new SlideShow();
+<%= content_for :js %>
+</script>
+	
+</body>
+</html>

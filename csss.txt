@@ -1,0 +1,34 @@
+#####################
+# Sample Slide Show (S9) template package manifest using CSSS
+# - CSSS by Lea Verou; see https://github.com/LeaVerou/CSSS 
+#
+# Change as desired/needed
+#
+# Configured to use the following headers in slides.html.erb:
+#
+# author: Your Name Here
+# title: Your Slide Show Title Here
+#
+# Questions? Comments?
+# Send them along to the Free Web Slide Show Alternatives (S5, S6, S9 And Friends) Forum/Mailing List.
+# http://groups.google.com/group/webslideshow
+
+
+__file__.html slides.html.erb
+__file__.css talk.css.erb
+
+
+# js machinery
+
+classList.js
+slideshow.js
+prefixfree.min.js
+
+# styles
+
+slideshow.css
+theme.css
+
+# graphics
+
+logo.svg

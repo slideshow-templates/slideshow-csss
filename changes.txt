@@ -1,0 +1,17 @@
+
+Notes on changes to original CSSS repo made by GB
+
+## talk.css
+
+- comment out line-height, color, background style in #intro .attribute rule
+
+## theme.css
+
+- change background-image in html to linear black to silver gradient
+  (that is, remove rainbow-wood.jpg image)
+- font-size changed to 0.8in (was 1.2in) for rule slide h2 
+
+## misc
+
+- add prefixfree.min.js in repo and change link in template
+- removed img/rainbow-wood.jpg (replace w/ css3 gradient)
