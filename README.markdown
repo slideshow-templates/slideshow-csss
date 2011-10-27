@@ -30,6 +30,11 @@ Now you're ready to use it using the `-t/--template` switch. Example:
 That's it. 
 
 
+## Samples
+
+See a sample in Markdown in the repo titled ['CSSS: Introduction'](https://raw.github.com/geraldb/slideshow-csss/master/sample.markdown).
+
+
 ## Questions? Comments?
 
 Questions? Comments?
