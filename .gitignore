@@ -1,2 +1,3 @@
-# ignore komodo project files
-*.kpf
+_site/
+.sass-cache/
+.jekyll-metadata

@@ -1,0 +1,22 @@
+#####
+#  GitHub Pages / Jekyll settings / config
+
+headers:
+  title:    "CSSS: Introduction"
+  author:    Lea Verou
+  generator: GitHub Pages w/ Jekyll
+
+
+collections:
+  slides:
+    output: false
+
+
+exclude:
+- README.md
+- changes.txt
+- csss.license.txt
+- csss.txt
+- csss.txt.quick
+- package.json
+- sample.md

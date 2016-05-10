@@ -1,4 +1,4 @@
-# CSSS - Slide Show (S9) Template Pack 
+# CSSS - Slide Show (S9) Template Pack
 
 
 ## What's Slide Show (S9)?
@@ -10,7 +10,7 @@ More [Slide Show (S9) Project Site &raquo;](http://slideshow-s9.github.io)
 
 ## Intro
 
-The [CSSS](https://github.com/LeaVerou/CSSS) package by Lea Verou bundled up into 
+The [CSSS](https://github.com/LeaVerou/CSSS) package by Lea Verou bundled up into
 a Slide Show (S9) template pack that lets you author your slides
 in a wiki-style markup language (that is, Markdown or Textile) plus
 lets you use text filters and helpers for adding comments, macros,
@@ -31,7 +31,7 @@ If you want to try it yourself, install (fetch) the new template pack. Issue the
 Or as an alternative clone the template pack using `git`. Issue the commands:
 
     $ cd ~/.slideshow/templates
-    $ git clone git://github.com/slideshow-s9/slideshow-csss.git
+    $ git clone https://github.com/slideshow-templates/slideshow-csss.git
 
 To check if the new template got installed, use the `list` command:
 
@@ -47,7 +47,7 @@ Tip: To get started use the included quick starter sample. Issue the command:
     $ slideshow new -t csss
 
 Now you will have a copy of the CSSS Quick Starter sample
-(that is, [`csss.text`](https://raw.github.com/slideshow-s9/slideshow-csss/master/sample.markdown))
+(that is, [`csss.text`](https://raw.github.com/slideshow-templates/slideshow-csss/gh-pages/sample.md))
 in Markdown in your working folder.
 
 ```
@@ -93,15 +93,12 @@ A simple framework for building presentations with modern web standards
 Showtime! Let's use the `-t/--template` switch to build the
 sample slide show. Example:
 
-    $ slideshow build csss.text -t csss --h2
-
-Note: Use the `--h2` option to break up slides on heading level 2
-(the default is `--h1`, that is, heading level 1).
+    $ slideshow build csss.text -t csss
 
 Open up the generated `csss.html` page in your browser. Voila. That's it.
 
 ## Questions? Comments?
 
 Questions? Comments?
-Send them along to the [Free Web Slide Show Alternatives (S5, S6, S9, Slidy And Friends) Forum/Mailing List](http://groups.google.com/group/webslideshow).
+Send them along to the [wwwmake forum/mailing list](http://groups.google.com/group/wwwmake).
 Thanks!
