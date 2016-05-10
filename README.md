@@ -22,6 +22,11 @@ Note, the CSSS package is configured to use the following headers in `slides.htm
     title: Your Slide Show Title Here
 
 
+## Live Preview
+
+See [`slides.html`](http://slideshow-templates.github.io/slideshow-csss/slides.html).
+
+
 ## Try It Yourself - How To Use the CSSS Template Pack
 
 If you want to try it yourself, install (fetch) the new template pack. Issue the command:
