@@ -14,8 +14,8 @@
 # http://groups.google.com/group/wwwmake
 
 
-__file__.html slides.html.erb
-__file__.css talk.css.erb
+__file__.html slides.html
+__file__.css style.css
 
 
 # js machinery

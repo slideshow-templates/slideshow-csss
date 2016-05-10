@@ -1,3 +1,6 @@
+---
+---
+
 #intro {
 	background: rgba(0,0,0,.7);
 	padding: 0;
@@ -33,11 +36,11 @@
 	object[type="image/svg+xml"] {
 		display: none;
 	}
-	
+
 	#intro h1 {
 		background: url(logo.svg) no-repeat center;
 		background-size:100% auto;
 	}
 }
 
-<%= content_for :css %>
+{{ more_content_for_css }}

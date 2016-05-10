@@ -1,30 +1,42 @@
+---
+---
+
+{% if jekyll %}
+  {% assign headers   = site.headers %}
+  {% assign slides    = site.slides %}
+  {% assign style_css = 'style.css' %}
+{% else %}
+  {% capture style_css %}{{ name }}.css{% endcapture %}
+{% endif %}
+
+
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<meta name="generator" content="Slide Show (S9); see slideshow.rubyforge.org">
-<meta name="author" content="<%= @headers['author']%>">
+<meta charset="utf-8">
+<meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="{{ headers['generator'] }}">
+<meta name="author"    content="{{ headers['author'] }}">
 
-<title><%= @headers['title'] %></title>
+<title>{{ headers['title'] }}</title>
 
 <!-- Don't alter this, CSSS needs it to work -->
-<link href="slideshow.css" rel="stylesheet" />
+<link href="slideshow.css" rel="stylesheet">
 
 <!-- Theme-specific styles go here (themes can be reused in multiple talks) -->
-<link href="theme.css" rel="stylesheet" />
+<link href="theme.css" rel="stylesheet">
 
 <!-- Talk-specific styles go here -->
-<!-- GB: changed fixed name (talk.css) to variable -->
-<link href="<%= "#{@name}.css" %>" rel="stylesheet" />
-	
+<!-- GB: changed fixed name (style.css) to variable -->
+<link href="{{ style_css }}" rel="stylesheet">
+
 </head>
 <!-- GB: todo: add duration header/property -->
 <body data-duration="45">
 
 <header id="intro" class="slide">
-	<h1><%= @headers['title'] %></h1>
-	<p class="attribution">By <%= @headers['author']%></p>
+	<h1>{{ headers['title'] }}</h1>
+	<p class="attribution">By {{ headers['author'] }}</p>
 </header>
 
 	<section class="slide" id="navigation">
@@ -43,27 +55,26 @@
 
 	<section class="slide">
 		<h2>CSSS Navigation Cont.</h2>
-		
+
 		<p>Thumbnail view</p>
 		<ul>
 		  <li>Press Ctrl+H (or Shift+H if you're in Opera) now.</li>
 		  <li>Press Ctrl+Shift+H to see all slides (warning: can be slow!)</li>
 		</ul>
-		
+
 		<p>Presenter view</p>
 		<ul>
 		  <li>This slide has presenter notes. They are only visible in presenter view (Ctrl+P or Shift+P).</li>
 		</ul>
-		<p class="presenter-notes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
-		
+		<p class="presenter-notes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
 	</section>
 
-<!-- note: assumes no header (breaking slides w/ SLIDE directive) -->
-<% @slides.each do |slide| %>
+{% for slide in slides %}
   <section class="slide">
-    <%= slide.content %>
+    {{ slide.content }}
   </section>
-<% end %>
+{% endfor %}
 
 
 <!--
@@ -84,8 +95,8 @@
 <script src="plugins/css-controls.js"></script>
 -->
 <script>var slideshow = new SlideShow();
-<%= content_for :js %>
+{{ more_content_for_js }}
 </script>
-	
+
 </body>
 </html>
