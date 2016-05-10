@@ -1,10 +1,6 @@
 title: CSSS: Introduction
 author: Lea Verou
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Note: Use the `--h2` option to break up slides on heading level 2   %%
-%% (the default is `--h1`, that is, heading level 1).                  %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 ## What is it?
