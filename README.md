@@ -1,5 +1,8 @@
 # CSSS - Slide Show (S9) Template Pack
 
+## Live Preview
+
+See [`slides.html`](http://slideshow-templates.github.io/slideshow-csss/slides.html).
 
 ## What's Slide Show (S9)?
 
@@ -20,11 +23,6 @@ Note, the CSSS package is configured to use the following headers in `slides.htm
 
     author: Your Name Here
     title: Your Slide Show Title Here
-
-
-## Live Preview
-
-See [`slides.html`](http://slideshow-templates.github.io/slideshow-csss/slides.html).
 
 
 ## Try It Yourself - How To Use the CSSS Template Pack
