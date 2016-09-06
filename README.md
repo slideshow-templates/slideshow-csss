@@ -50,7 +50,7 @@ Tip: To get started use the included quick starter sample. Issue the command:
     $ slideshow new -t csss
 
 Now you will have a copy of the CSSS Quick Starter sample
-(that is, [`csss.text`](https://raw.github.com/slideshow-templates/slideshow-csss/gh-pages/sample.md))
+(that is, [`csss.text`](https://raw.github.com/slideshow-templates/slideshow-csss/master/sample.md))
 in Markdown in your working folder.
 
 ```
